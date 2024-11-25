@@ -1,7 +1,13 @@
-export default function Page(){
-    return (
-        <div className="w-screen h-screen">
-            현대중공업 & 현대미포조선 페이지
-            </div>
-    )
+import HiCoWork from "./hiCoWork";
+import HmdCoWork from "./hmdCoWork";
+
+export default function Page() {
+  return (
+    <div className="w-screen h-screen">
+      <div className="flex w-full h-full">
+        <HiCoWork />
+        <HmdCoWork />
+      </div>
+    </div>
+  );
 }
