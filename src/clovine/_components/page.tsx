@@ -1,5 +1,13 @@
-export default function Page(){
-    return (
-        <div className="w-screen h-screen">Clovine, Dynamic 마인드맵</div>
-    )
+import Clovine from "./clovine";
+import DynamicMindmap from "./dynamicMindmap";
+
+export default function Page() {
+  return (
+    <div className="h-screen">
+      <div className="flex w-full h-full gap-5 mt-5">
+        <Clovine />
+        <DynamicMindmap />
+      </div>
+    </div>
+  );
 }

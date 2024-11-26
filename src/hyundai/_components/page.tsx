@@ -3,8 +3,8 @@ import HmdCoWork from "./hmdCoWork";
 
 export default function Page() {
   return (
-    <div className="w-screen h-screen">
-      <div className="flex w-full h-full">
+    <div className="h-screen">
+      <div className="flex w-full h-full gap-5 mt-10">
         <HiCoWork />
         <HmdCoWork />
       </div>

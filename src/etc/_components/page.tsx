@@ -1,5 +1,15 @@
-export default function Page(){
-    return(
-        <div className="w-screen h-screen">PMIS, 대우조선, 스마트 팩토리</div>
-    )
+import Eddm from "./eddm";
+import Pmis from "./pmis";
+import SmartFactory from "./smartFactory";
+
+export default function Page() {
+  return (
+    <div className="h-screen mt-5">
+      <div className="flex w-full h-full gap-5">
+        <Pmis />
+        <Eddm />
+        <SmartFactory />
+      </div>
+    </div>
+  );
 }
