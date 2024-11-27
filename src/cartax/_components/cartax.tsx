@@ -46,7 +46,12 @@ export default function Cartax() {
             구조
           </div>
           <div className="flex gap-3 px-10 py-5 items-center hover:shadow-md transition-shadow">
-            <img src={"../_image/contructor/cartax.jpg"} width={"auto"} />
+            <img
+              src={
+                "https://hosplan.github.io/my-portfolio/_image/contructor/cartax.jpg"
+              }
+              width={"auto"}
+            />
           </div>
         </div>
         <div className="flex flex-col w-full mt-5 border rounded-xl">
@@ -63,7 +68,7 @@ export default function Cartax() {
           </div>
           <div className="flex gap-10 px-10 py-5 h-full flex-col items-center hover:shadow-md transition-shadow">
             <div className="m-auto">
-              <img src={"../_image/cartax/cartax_01.png"} width={"auto"} />
+              <img src={"./_image/cartax/cartax_01.png"} width={"auto"} />
               <br />
               <span>대시보드</span>
             </div>
