@@ -24,7 +24,7 @@ export default function HmdCoWork() {
   };
 
   return (
-    <div className="z-50 flex-1 h-full p-20 flex flex-col items-start border rounded-xl hover:bg-gray-100 transition-all hover:text-black">
+    <div className="z-50 flex-1 h-full p-20 flex flex-col items-start border rounded-xl transition-all">
       <Title title={"현대중공업 HMD-CoWork"} />
       <SubTitle
         subTitle={
@@ -32,17 +32,18 @@ export default function HmdCoWork() {
         }
       />
       <BasicInfo basicInfo={BASIC_INFO} />
-      <WorkList workList={WORK_LIST} percent={40} />
-      <Effect title={"프로젝트 효과"} effectList={EFFECT_LIST} />
+      <div className="flex flex-col overflow-y-auto w-full">
+        <WorkList workList={WORK_LIST} percent={40} />
+        <Effect title={"프로젝트 효과"} effectList={EFFECT_LIST} />
 
-      <div className="flex flex-col w-full mt-5 border rounded-xl">
-        <div className="flex items-center gap-2 text-left text-lg font-semibold border-b py-3 px-6">
-          <CubeIcon />
-          구조
-        </div>
-        <div className="flex gap-3 px-10 py-5 h-full items-center hover:shadow-md transition-shadow">
-          HMD데이터베이스,SpecData, HMDCoWork, 인사정보, 프로젝트관리, Spec관리,
-          Issue관리
+        <div className="flex flex-col w-full mt-5 border rounded-xl">
+          <div className="flex items-center gap-2 text-left text-lg font-semibold border-b py-3 px-6">
+            <CubeIcon />
+            구조
+          </div>
+          <div className="flex gap-3 px-10 py-5 h-full items-center hover:shadow-md transition-shadow">
+            <img src={"../_image/contructor/hmdCoWork.jpg"} width={"auto"} />
+          </div>
         </div>
       </div>
     </div>

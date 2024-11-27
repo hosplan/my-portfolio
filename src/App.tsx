@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header"></header>
-      <body className="overflow-x-hidden w-full p-10">
+      <div className="overflow-x-hidden w-full p-10">
         <div id={dev.smallStars}></div>
         <div id={dev.middleStars}></div>
         <div id={dev.bigStars}></div>
@@ -22,7 +22,7 @@ function App() {
         <ClovinePage />
         <CarTaxPage />
         <EndPage />
-      </body>
+      </div>
     </div>
   );
 }

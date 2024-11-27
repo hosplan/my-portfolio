@@ -4,7 +4,7 @@ import CogIcon from "../_icon/cogIcon";
 
 export default function BasicInfo({ basicInfo }: { basicInfo: any }) {
   return (
-    <div className="flex flex-col mt-7 w-full">
+    <div className="flex flex-col pt-7 w-full">
       <div className="p-3 border-t-2 border-gray-400 flex justify-start items-center gap-3">
         <div className="w-28 text-left font-semibold text-xl flex justify-start gap-2 items-center">
           <CalendarIcon />

@@ -9,6 +9,25 @@
   font-weight: 400;
   font-style: normal;
 }
+.scrollbar {
+  width: 250px;
+  height: 250px;
+  overflow-y: scroll; /*  */
+}
+
+/* 스크롤바의 폭 너비 */
+div::-webkit-scrollbar {
+  width: 10px;
+}
+
+div::-webkit-scrollbar-thumb {
+  background: #f3f4f6; /* 스크롤바 색상 */
+  border-radius: 10px; /* 스크롤바 둥근 테두리 */
+}
+
+div::-webkit-scrollbar-track {
+  background: black; /*스크롤바 뒷 배경 색상*/
+}
 html {
   background-color: black;
   color: white;

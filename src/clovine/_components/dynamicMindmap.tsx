@@ -24,21 +24,22 @@ export default function DynamicMindmap() {
   };
 
   return (
-    <div className="z-50 flex-1 h-full p-20 flex flex-col items-start border rounded-xl hover:bg-gray-100 transition-all hover:text-black">
+    <div className="z-50 flex-1 h-full p-20 flex flex-col items-start border rounded-xl transition-all">
       <Title title={"Dynamic MindMap"} />
       <SubTitle subTitle={"기존 마인드맵을 대체하는 차세대 마인드맵"} />
       <BasicInfo basicInfo={BASIC_INFO} />
-      <WorkList workList={WORK_LIST} percent={80} />
-      <Effect title={"서비스 개선 효과"} effectList={EFFECT_LIST} />
+      <div className="flex flex-col overflow-y-auto w-full">
+        <WorkList workList={WORK_LIST} percent={80} />
+        <Effect title={"서비스 개선 효과"} effectList={EFFECT_LIST} />
 
-      <div className="flex flex-col w-full mt-5 border rounded-xl hover:shadow-md transition-shadow">
-        <div className="flex items-center gap-2 text-left text-lg font-semibold border-b py-3 px-6">
-          <CubeIcon />
-          구조
-        </div>
-        <div className="flex gap-3 px-10 py-5 items-center hover:shadow-md transition-shadow">
-          Polarion 시스템, SpecData, 통합인사정보, HiCoWork, CoWorkDB,
-          프로젝트관리, Spec관리, Issue관리
+        <div className="flex flex-col w-full mt-5 border rounded-xl hover:shadow-md transition-shadow">
+          <div className="flex items-center gap-2 text-left text-lg font-semibold border-b py-3 px-6">
+            <CubeIcon />
+            구조
+          </div>
+          <div className="flex gap-3 px-10 py-5 items-center hover:shadow-md transition-shadow">
+            <img src={"../_image/contructor/smartFactory.jpg"} width={"auto"} />
+          </div>
         </div>
       </div>
     </div>

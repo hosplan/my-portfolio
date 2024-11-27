@@ -25,7 +25,7 @@ export default function HiCoWork() {
   };
 
   return (
-    <div className="z-50 flex-1 h-full p-20 flex flex-col items-start border rounded-xl hover:bg-gray-100 transition-all hover:text-black">
+    <div className="z-50 flex-1 h-full p-20 flex flex-col items-start border rounded-xl transition-all">
       <Title title={"현대중공업 Hi-CoWork"} />
       <SubTitle
         subTitle={
@@ -33,17 +33,18 @@ export default function HiCoWork() {
         }
       />
       <BasicInfo basicInfo={BASIC_INFO} />
-      <WorkList workList={WORK_LIST} percent={40} />
-      <Effect title={"프로젝트 효과"} effectList={EFFECT_LIST} />
+      <div className="flex flex-col overflow-y-auto w-full">
+        <WorkList workList={WORK_LIST} percent={40} />
+        <Effect title={"프로젝트 효과"} effectList={EFFECT_LIST} />
 
-      <div className="flex flex-col w-full mt-5 border rounded-xl hover:shadow-md transition-shadow">
-        <div className="flex items-center gap-2 text-left text-lg font-semibold border-b py-3 px-6">
-          <CubeIcon />
-          구조
-        </div>
-        <div className="flex gap-3 px-10 py-5 items-center hover:shadow-md transition-shadow">
-          Polarion 시스템, SpecData, 통합인사정보, HiCoWork, CoWorkDB,
-          프로젝트관리, Spec관리, Issue관리
+        <div className="flex flex-col w-full mt-5 border rounded-xl hover:shadow-md transition-shadow">
+          <div className="flex items-center gap-2 text-left text-lg font-semibold border-b py-3 px-6">
+            <CubeIcon />
+            구조
+          </div>
+          <div className="flex gap-3 px-10 py-5 items-center hover:shadow-md transition-shadow">
+            <img src={"../_image/contructor/hiCoWork.jpg"} width={"auto"} />
+          </div>
         </div>
       </div>
     </div>

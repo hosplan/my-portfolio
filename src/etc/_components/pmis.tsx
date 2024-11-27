@@ -24,23 +24,24 @@ export default function Pmis() {
     useTech: ["C#, MSSQL, JavaScript"],
   };
   return (
-    <div className="z-50 flex-1 h-full p-20 flex flex-col items-start border rounded-xl hover:bg-gray-100 transition-all hover:text-black">
+    <div className="z-50 flex-1 h-full p-20 flex flex-col items-start border rounded-xl transition-all">
       <Title title={"PMIS"} />
       <SubTitle
         subTitle={"상기 프로젝트의 노하우로 만든 범용 프로젝트 형상관리 시스템"}
       />
       <BasicInfo basicInfo={BASIC_INFO} />
-      <WorkList workList={WORK_LIST} percent={-1} />
-      <Effect title={"시스템 도입 기업"} effectList={EFFECT_LIST} />
+      <div className="flex flex-col overflow-y-auto w-full">
+        <WorkList workList={WORK_LIST} percent={-1} />
+        <Effect title={"시스템 도입 기업"} effectList={EFFECT_LIST} />
 
-      <div className="flex flex-col w-full mt-5 border rounded-xl">
-        <div className="flex items-center gap-2 text-left text-lg font-semibold border-b py-3 px-6">
-          <CubeIcon />
-          구조
-        </div>
-        <div className="flex gap-3 px-10 py-5 h-full items-center hover:shadow-md transition-shadow">
-          HMD데이터베이스,SpecData, HMDCoWork, 인사정보, 프로젝트관리, Spec관리,
-          Issue관리
+        <div className="flex flex-col w-full mt-5 border rounded-xl">
+          <div className="flex items-center gap-2 text-left text-lg font-semibold border-b py-3 px-6">
+            <CubeIcon />
+            구조
+          </div>
+          <div className="flex gap-3 px-10 py-5 h-full items-center hover:shadow-md transition-shadow">
+            <img src={"../_image/contructor/pmis.jpg"} width={"auto"} />
+          </div>
         </div>
       </div>
     </div>

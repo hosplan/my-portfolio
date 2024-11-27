@@ -4,6 +4,7 @@ import SubTitle from "../../_components/subTitle";
 import Title from "../../_components/title";
 import WorkList from "../../_components/workList";
 import CubeIcon from "../../_icon/cubeIcon";
+import Monitor from "../../_icon/monitor";
 export default function Eddm() {
   const WORK_LIST = [
     "대우조선 선박 건조에 필요한 설계 작업에 활용되는 API 루트 비교",
@@ -25,19 +26,32 @@ export default function Eddm() {
   };
 
   return (
-    <div className="z-50 flex-1 h-full p-20 flex flex-col items-start border rounded-xl hover:bg-gray-100 transition-all hover:text-black">
+    <div className="z-50 flex-1 h-full p-20 flex flex-col items-start border rounded-xl transition-all">
       <Title title={"대우조선 EDDM"} />
       <SubTitle subTitle={"최적의 API 루트맵, 통합 추적 / 상태 관리 시스템"} />
       <BasicInfo basicInfo={BASIC_INFO} />
-      <WorkList workList={WORK_LIST} percent={-1} />
-      <Effect title={"프로젝트 효과"} effectList={EFFECT_LIST} />
+      <div className="flex flex-col overflow-y-auto w-full">
+        <WorkList workList={WORK_LIST} percent={-1} />
+        <Effect title={"프로젝트 효과"} effectList={EFFECT_LIST} />
 
-      <div className="flex flex-col w-full mt-5 border rounded-xl">
-        <div className="flex items-center gap-2 text-left text-lg font-semibold border-b py-3 px-6">
-          <CubeIcon />
-          구조
+        <div className="flex flex-col w-full mt-5 border rounded-xl">
+          <div className="flex items-center gap-2 text-left text-lg font-semibold border-b py-3 px-6">
+            <Monitor />
+            실제 화면
+          </div>
+          <div className="flex gap-10 px-10 py-5 h-full flex-col items-center hover:shadow-md transition-shadow">
+            <div className="m-auto">
+              <img src={"../_image/eddm/eddm_01.jpg"} width={"auto"} />
+              <br />
+              <span>API 사용량 추적</span>
+            </div>
+            <div className="m-auto">
+              <img src={"../_image/eddm/eddm_02.jpg"} width={"auto"} />
+              <br />
+              <span>대시보드</span>
+            </div>
+          </div>
         </div>
-        <div className="flex gap-3 px-10 py-5 h-full items-center hover:shadow-md transition-shadow"></div>
       </div>
     </div>
   );
