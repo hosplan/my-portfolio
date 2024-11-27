@@ -41,12 +41,22 @@ export default function Eddm() {
           </div>
           <div className="flex gap-10 px-10 py-5 h-full flex-col items-center hover:shadow-md transition-shadow">
             <div className="m-auto">
-              <img src={"../_image/eddm/eddm_01.jpg"} width={"auto"} />
+              <img
+                src={
+                  "https://hosplan.github.io/my-portfolio/img/eddm/eddm_01.jpg"
+                }
+                width={"auto"}
+              />
               <br />
               <span>API 사용량 추적</span>
             </div>
             <div className="m-auto">
-              <img src={"../_image/eddm/eddm_02.jpg"} width={"auto"} />
+              <img
+                src={
+                  "https://hosplan.github.io/my-portfolio/img/eddm/eddm_02.jpg"
+                }
+                width={"auto"}
+              />
               <br />
               <span>대시보드</span>
             </div>

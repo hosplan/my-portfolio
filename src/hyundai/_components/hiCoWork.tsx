@@ -43,7 +43,12 @@ export default function HiCoWork() {
             구조
           </div>
           <div className="flex gap-3 px-10 py-5 items-center hover:shadow-md transition-shadow">
-            <img src={"../_image/contructor/hiCoWork.jpg"} width={"auto"} />
+            <img
+              src={
+                "https://hosplan.github.io/my-portfolio/img/contructor/hiCoWork.jpg"
+              }
+              width={"auto"}
+            />
           </div>
         </div>
       </div>

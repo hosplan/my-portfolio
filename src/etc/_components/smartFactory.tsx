@@ -42,7 +42,12 @@ export default function SmartFactory() {
             구조
           </div>
           <div className="flex gap-3 px-10 py-5 h-full items-center hover:shadow-md transition-shadow">
-            <img src={"../_image/contructor/smartFactory.jpg"} width={"auto"} />
+            <img
+              src={
+                "https://hosplan.github.io/my-portfolio/img/contructor/smartFactory.jpg"
+              }
+              width={"auto"}
+            />
           </div>
         </div>
 
@@ -53,17 +58,30 @@ export default function SmartFactory() {
           </div>
           <div className="flex flex-col gap-5 px-10 py-5 h-full items-center hover:shadow-md transition-shadow">
             <div className="flex-1">
-              <img src={"../_image/smartFactory_01.jpg"} />
+              <img
+                src={
+                  "https://hosplan.github.io/my-portfolio/img/smartFactory_01.jpg"
+                }
+              />
               <br />
               <span>스마트 카메라</span>
             </div>
             <div className="flex-1">
-              <img src={"../_image/smartFactory_02.jpg"} />
+              <img
+                src={
+                  "https://hosplan.github.io/my-portfolio/img/smartFactory_02.jpg"
+                }
+              />
               <br />
               <span>PLC 연결</span>
             </div>
             <div className="flex-1 w-full">
-              <img src={"../_image/smartFactory_03.jpg"} width={"auto"} />
+              <img
+                src={
+                  "https://hosplan.github.io/my-portfolio/img/smartFactory_03.jpg"
+                }
+                width={"auto"}
+              />
               <br />
               <span>QR코드 연동</span>
             </div>

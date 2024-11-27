@@ -42,7 +42,12 @@ export default function HmdCoWork() {
             구조
           </div>
           <div className="flex gap-3 px-10 py-5 h-full items-center hover:shadow-md transition-shadow">
-            <img src={"../_image/contructor/hmdCoWork.jpg"} width={"auto"} />
+            <img
+              src={
+                "https://hosplan.github.io/my-portfolio/img/contructor/hmdCoWork.jpg"
+              }
+              width={"auto"}
+            />
           </div>
         </div>
       </div>

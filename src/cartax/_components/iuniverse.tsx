@@ -45,7 +45,12 @@ export default function Iuniverse() {
             구조
           </div>
           <div className="flex gap-3 px-10 py-5 items-center hover:shadow-md transition-shadow">
-            <img src={"../_image/contructor/iuniverse.jpg"} width={"auto"} />
+            <img
+              src={
+                "https://hosplan.github.io/my-portfolio/img/contructor/iuniverse.jpg"
+              }
+              width={"auto"}
+            />
           </div>
         </div>
         <div className="flex flex-col w-full mt-5 border rounded-xl">
@@ -62,22 +67,42 @@ export default function Iuniverse() {
           </div>
           <div className="flex gap-10 px-10 py-5 h-full flex-col items-center hover:shadow-md transition-shadow">
             <div className="m-auto">
-              <img src={"../_image/iuniverse/iuni_01.png"} width={"auto"} />
+              <img
+                src={
+                  "https://hosplan.github.io/my-portfolio/img/iuniverse/iuni_01.png"
+                }
+                width={"auto"}
+              />
               <br />
               <span>로그인 페이지</span>
             </div>
             <div className="m-auto">
-              <img src={"../_image/iuniverse/iuni_02.png"} width={"auto"} />
+              <img
+                src={
+                  "https://hosplan.github.io/my-portfolio/img/iuniverse/iuni_02.png"
+                }
+                width={"auto"}
+              />
               <br />
               <span>아바타 관리</span>
             </div>
             <div className="m-auto">
-              <img src={"../_image/iuniverse/iuni_03.png"} width={"auto"} />
+              <img
+                src={
+                  "https://hosplan.github.io/my-portfolio/img/iuniverse/iuni_03.png"
+                }
+                width={"auto"}
+              />
               <br />
               <span>태스크 목록(칸반)</span>
             </div>
             <div className="m-auto">
-              <img src={"../_image/iuniverse/iuni_04.png"} width={"auto"} />
+              <img
+                src={
+                  "https://hosplan.github.io/my-portfolio/img/iuniverse/iuni_04.png"
+                }
+                width={"auto"}
+              />
               <br />
               <span>태스크 상세 수정</span>
             </div>

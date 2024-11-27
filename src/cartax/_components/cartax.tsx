@@ -66,22 +66,43 @@ export default function Cartax() {
           </div>
           <div className="flex gap-10 px-10 py-5 h-full flex-col items-center hover:shadow-md transition-shadow">
             <div className="m-auto">
-              <img src={"./_image/cartax/cartax_01.png"} width={"auto"} />
+              <img
+                src={
+                  "https://hosplan.github.io/my-portfolio/img/cartax/cartax_01.png"
+                }
+                width={"auto"}
+              />
+
               <br />
               <span>대시보드</span>
             </div>
             <div className="m-auto">
-              <img src={"../_image/cartax/cartax_02.png"} width={"auto"} />
+              <img
+                src={
+                  "https://hosplan.github.io/my-portfolio/img/cartax/cartax_02.png"
+                }
+                width={"auto"}
+              />
               <br />
               <span>차량 관리</span>
             </div>
             <div className="m-auto">
-              <img src={"../_image/cartax/cartax_03.png"} width={"auto"} />
+              <img
+                src={
+                  "https://hosplan.github.io/my-portfolio/img/cartax/cartax_03.png"
+                }
+                width={"auto"}
+              />
               <br />
               <span>차량 상세정보</span>
             </div>
             <div className="m-auto">
-              <img src={"../_image/cartax/cartax_04.png"} width={"auto"} />
+              <img
+                src={
+                  "https://hosplan.github.io/my-portfolio/img/cartax/cartax_04.png"
+                }
+                width={"auto"}
+              />
               <br />
               <span>사용자 정보</span>
             </div>
