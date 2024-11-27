@@ -47,9 +47,7 @@ export default function Cartax() {
           </div>
           <div className="flex gap-3 px-10 py-5 items-center hover:shadow-md transition-shadow">
             <img
-              src={
-                "https://hosplan.github.io/my-portfolio/_image/contructor/cartax.jpg"
-              }
+              src="https://hosplan.github.io/my-portfolio/_image/contructor/cartax.jpg"
               width={"auto"}
             />
           </div>
