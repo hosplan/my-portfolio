@@ -32,7 +32,7 @@ export default function HmdCoWork() {
         }
       />
       <BasicInfo basicInfo={BASIC_INFO} />
-      <div className="flex flex-col overflow-y-auto w-full">
+      <div className="flex flex-col overflow-y-auto w-full mt-10">
         <WorkList workList={WORK_LIST} percent={40} />
         <Effect title={"프로젝트 효과"} effectList={EFFECT_LIST} />
 

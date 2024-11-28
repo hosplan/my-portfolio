@@ -36,7 +36,7 @@ export default function Cartax() {
         }
       />
       <BasicInfo basicInfo={BASIC_INFO} />
-      <div className="flex flex-col overflow-y-auto w-full">
+      <div className="flex flex-col overflow-y-auto w-full mt-10">
         <WorkList workList={WORK_LIST} percent={60} />
         <Effect title={"서비스 개선 효과"} effectList={EFFECT_LIST} />
 

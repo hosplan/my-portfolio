@@ -32,7 +32,7 @@ export default function SmartFactory() {
       <Title title={"스마트팩토리"} />
       <SubTitle subTitle={"판넬 제조업 특성 맞춤 MES/스마트 팩토리"} />
       <BasicInfo basicInfo={BASIC_INFO} />
-      <div className="flex flex-col overflow-y-auto w-full">
+      <div className="flex flex-col overflow-y-auto w-full mt-10">
         <WorkList workList={WORK_LIST} percent={-1} />
         <Effect title={"프로젝트 효과"} effectList={EFFECT_LIST} />
 

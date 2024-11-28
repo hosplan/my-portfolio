@@ -36,7 +36,7 @@ export default function Iuniverse() {
       <Title title={"IUniverse"} />
       <SubTitle subTitle={"범용적 업무지원 시스템"} />
       <BasicInfo basicInfo={BASIC_INFO} />
-      <div className="flex flex-col overflow-y-auto w-full">
+      <div className="flex flex-col overflow-y-auto w-full mt-10">
         <WorkList workList={WORK_LIST} percent={60} />
         <Effect title={"그 외 사용"} effectList={EFFECT_LIST} />
         <div className="flex flex-col w-full mt-5 border rounded-xl hover:shadow-md transition-shadow">

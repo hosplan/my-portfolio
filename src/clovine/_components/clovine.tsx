@@ -33,7 +33,7 @@ export default function Clovine() {
         }
       />
       <BasicInfo basicInfo={BASIC_INFO} />
-      <div className="flex flex-col overflow-y-auto w-full">
+      <div className="flex flex-col overflow-y-auto w-full mt-10">
         <WorkList workList={WORK_LIST} percent={60} />
         <Effect title={"서비스 개선 효과"} effectList={EFFECT_LIST} />
 
@@ -43,12 +43,14 @@ export default function Clovine() {
             구조
           </div>
           <div className="flex gap-3 px-10 py-5 items-center hover:shadow-md transition-shadow">
-            <img
-              src={
-                "https://hosplan.github.io/my-portfolio/img/contructor/clovine.jpg"
-              }
-              width={"auto"}
-            />
+            <div className="m-auto">
+              <img
+                src={
+                  "https://hosplan.github.io/my-portfolio/img/contructor/clovine.jpg"
+                }
+                width={"auto"}
+              />
+            </div>
           </div>
         </div>
       </div>

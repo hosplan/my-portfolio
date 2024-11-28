@@ -7,7 +7,7 @@ export default function WorkList({
   percent: number;
 }) {
   return (
-    <div className="flex flex-col w-full mt-5 border border-gray-400 rounded-xl hover:shadow-md transition-shadow">
+    <div className="flex flex-col w-full border border-gray-400 rounded-xl hover:shadow-md transition-shadow">
       <div className="flex items-center gap-2 text-left text-lg font-semibold border-gray-400 border-b py-3 px-6">
         <WorkListIcon />
         주요 업무

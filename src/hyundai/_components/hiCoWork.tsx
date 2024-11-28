@@ -33,11 +33,11 @@ export default function HiCoWork() {
         }
       />
       <BasicInfo basicInfo={BASIC_INFO} />
-      <div className="flex flex-col overflow-y-auto w-full">
+      <div className="flex flex-col overflow-y-auto w-full mt-10">
         <WorkList workList={WORK_LIST} percent={40} />
         <Effect title={"프로젝트 효과"} effectList={EFFECT_LIST} />
 
-        <div className="flex flex-col w-full mt-5 border rounded-xl hover:shadow-md transition-shadow">
+        <div className="flex flex-col w-full border rounded-xl mt-5 hover:shadow-md transition-shadow">
           <div className="flex items-center gap-2 text-left text-lg font-semibold border-b py-3 px-6">
             <CubeIcon />
             구조

@@ -30,7 +30,7 @@ export default function Eddm() {
       <Title title={"대우조선 EDDM"} />
       <SubTitle subTitle={"최적의 API 루트맵, 통합 추적 / 상태 관리 시스템"} />
       <BasicInfo basicInfo={BASIC_INFO} />
-      <div className="flex flex-col overflow-y-auto w-full">
+      <div className="flex flex-col overflow-y-auto w-full mt-10">
         <WorkList workList={WORK_LIST} percent={-1} />
         <Effect title={"프로젝트 효과"} effectList={EFFECT_LIST} />
 

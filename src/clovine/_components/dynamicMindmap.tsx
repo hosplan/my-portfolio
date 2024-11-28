@@ -28,22 +28,32 @@ export default function DynamicMindmap() {
       <Title title={"Dynamic MindMap"} />
       <SubTitle subTitle={"기존 마인드맵을 대체하는 차세대 마인드맵"} />
       <BasicInfo basicInfo={BASIC_INFO} />
-      <div className="flex flex-col overflow-y-auto w-full">
+      <div className="flex flex-col overflow-y-auto w-full mt-10">
         <WorkList workList={WORK_LIST} percent={80} />
         <Effect title={"서비스 개선 효과"} effectList={EFFECT_LIST} />
 
         <div className="flex flex-col w-full mt-5 border rounded-xl hover:shadow-md transition-shadow">
           <div className="flex items-center gap-2 text-left text-lg font-semibold border-b py-3 px-6">
             <CubeIcon />
-            구조
+            실제사진
           </div>
           <div className="flex gap-3 px-10 py-5 items-center hover:shadow-md transition-shadow">
-            <img
-              src={
-                "https://hosplan.github.io/my-portfolio/img/contructor/smartFactory.jpg"
-              }
-              width={"auto"}
-            />
+            <div className="m-auto">
+              <img
+                src={
+                  "https://hosplan.github.io/my-portfolio/img/clovine/mindmap_01.png"
+                }
+                width={"auto"}
+              />
+            </div>
+            <div className="m-auto">
+              <img
+                src={
+                  "https://hosplan.github.io/my-portfolio/img/clovine/mindmap_02.png"
+                }
+                width={"auto"}
+              />
+            </div>
           </div>
         </div>
       </div>

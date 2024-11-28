@@ -30,7 +30,7 @@ export default function Pmis() {
         subTitle={"상기 프로젝트의 노하우로 만든 범용 프로젝트 형상관리 시스템"}
       />
       <BasicInfo basicInfo={BASIC_INFO} />
-      <div className="flex flex-col overflow-y-auto w-full">
+      <div className="flex flex-col overflow-y-auto w-full mt-10">
         <WorkList workList={WORK_LIST} percent={-1} />
         <Effect title={"시스템 도입 기업"} effectList={EFFECT_LIST} />
 
