@@ -29,6 +29,14 @@ export default function Page() {
         <span className="text-white font-light text-2xl text-left">
           phone: 010-2827-0682
         </span>
+
+        <a
+          href="https://github.com/hosplan"
+          target="_blank"
+          className="text-blue-500 font-light text-2xl text-left"
+        >
+          https://github.com/hosplan
+        </a>
       </div>
     </div>
   );
