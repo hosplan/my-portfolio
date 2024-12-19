@@ -8,7 +8,7 @@ export default function Clovine() {
   const WORK_LIST = [
     "Clovine SAAS 서비스 운영중 발생하는 핵심 개발이슈/오류 트러블 슈팅 및 개선",
     "개발 확장성을 고려한 모듈화 작업 진행",
-    "신규 제품 기능 갯건 및 개발에 필요한 선행 신 기술 연구",
+    "신규 제품 기능 개선 및 개발에 필요한 선행 신 기술 연구",
     "선행 신기술 개발 적용/활용할 수 있는 기타 프로젝트 참여",
   ];
 
@@ -19,13 +19,13 @@ export default function Clovine() {
   ];
 
   const BASIC_INFO = {
-    duringDate: "2022-02 ~ 2023-10",
+    duringDate: "2022-03 ~ 2023-10",
     submit: "프로젝트 통합 관리 SAAS 서비스",
     useTech: ["ExpressJS", "MongoDB", "JavaScript"],
   };
 
   return (
-    <div className="z-50 flex-1 h-full p-20 flex flex-col items-start border rounded-xl transition-all">
+    <div className="z-50 flex-1 p-20 flex flex-col items-start border rounded-xl transition-all h-screen">
       <Title title={"클로바인"} />
       <SubTitle
         subTitle={

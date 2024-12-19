@@ -17,7 +17,7 @@ export default function WorkList({
           className={
             percent === -1
               ? `w-[100%] text-left  text-gray-400 font-light list-disc`
-              : `w-[70%] text-left  text-gray-400 font-light list-disc`
+              : `w-[80%] text-left  text-gray-400 font-light list-disc`
           }
         >
           {workList.map((work: string, index: number) => (

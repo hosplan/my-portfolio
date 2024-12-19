@@ -17,11 +17,13 @@ function App() {
         <div id={dev.middleStars}></div>
         <div id={dev.bigStars}></div>
         <Page />
-        <HyundaiPage />
-        <EtcPage />
-        <ClovinePage />
-        <CarTaxPage />
-        <EndPage />
+        <div className="flex flex-col wrap">
+          <HyundaiPage />
+          <EtcPage />
+          <ClovinePage />
+          <CarTaxPage />
+          <EndPage />
+        </div>
       </div>
     </div>
   );

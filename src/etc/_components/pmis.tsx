@@ -19,12 +19,12 @@ export default function Pmis() {
   ];
 
   const BASIC_INFO = {
-    duringDate: "2021-02 ~ 2022-02",
+    duringDate: "2021-01 ~ 2022-02",
     submit: "프로젝트 통합 정보 관리",
     useTech: ["C#, MSSQL, JavaScript"],
   };
   return (
-    <div className="z-50 flex-1 h-full p-20 flex flex-col items-start border rounded-xl transition-all">
+    <div className="z-50 flex-1 h-screen p-20 flex flex-col items-start border rounded-xl transition-all">
       <Title title={"PMIS"} />
       <SubTitle
         subTitle={"상기 프로젝트의 노하우로 만든 범용 프로젝트 형상관리 시스템"}

@@ -26,7 +26,7 @@ export default function Eddm() {
   };
 
   return (
-    <div className="z-50 flex-1 h-full p-20 flex flex-col items-start border rounded-xl transition-all">
+    <div className="z-50 flex-1 h-screen p-20 flex flex-col items-start border rounded-xl transition-all">
       <Title title={"대우조선 EDDM"} />
       <SubTitle subTitle={"최적의 API 루트맵, 통합 추적 / 상태 관리 시스템"} />
       <BasicInfo basicInfo={BASIC_INFO} />
