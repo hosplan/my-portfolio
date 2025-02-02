@@ -57,13 +57,6 @@ export default function Iuniverse() {
           <div className="flex items-center gap-2 text-left text-lg font-semibold border-b py-3 px-6">
             <Monitor />
             실제 화면
-            <a
-              href="https://iuniverse.me"
-              target="_blank"
-              className="text-blue-600 ml-auto"
-            >
-              iUniverse 홈페이지 가기
-            </a>
           </div>
           <div className="flex gap-10 px-10 py-5 h-full flex-col items-center hover:shadow-md transition-shadow">
             <div className="m-auto">
