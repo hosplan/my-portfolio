@@ -24,7 +24,7 @@ export default function Cartax() {
   const BASIC_INFO = {
     duringDate: `2024-06 ~ ${dayjs().format("YYYY-MM-DD")}`,
     submit: "법인차량 운행일지 자동 생성 서비스",
-    useTech: ["ExpressJS", "MongoDB", "JavaScript"],
+    useTech: ["NextJS", "Mysql", "AWS", "Nginx"],
   };
 
   return (
