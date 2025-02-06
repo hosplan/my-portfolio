@@ -21,7 +21,7 @@ function Eddm() {
   ];
 
   const BASIC_INFO = {
-    duringDate: "2022-02 ~ 2023-02",
+    duringDate: "2021-05 ~ 2021-12",
     submit: "Enginerring Data Digital Map",
     useTech: ["C#", "MSSQL", "JavaScript"],
   };

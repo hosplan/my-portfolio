@@ -19,7 +19,7 @@ function DynamicMindmap() {
   ];
 
   const BASIC_INFO = {
-    duringDate: "2022-10 ~ 2023-04",
+    duringDate: "2022-10 ~ 2023-06",
     submit: "D3.js를 활용한 마인드맵",
     useTech: ["ExpressJS", "Javscript", "d3", "HTML5", "CSS3"],
   };

@@ -20,7 +20,7 @@ function Pmis() {
   ];
 
   const BASIC_INFO = {
-    duringDate: "2021-01 ~ 2022-02",
+    duringDate: "2021-02 ~ 2022-02",
     submit: "프로젝트 통합 정보 관리",
     useTech: [
       "C#",
