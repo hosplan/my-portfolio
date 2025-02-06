@@ -1,3 +1,4 @@
+import { memo } from "react";
 import BasicInfo from "../../_components/basicInfo";
 import Effect from "../../_components/effect";
 import SubTitle from "../../_components/subTitle";
@@ -5,7 +6,7 @@ import Title from "../../_components/title";
 import WorkList from "../../_components/workList";
 import CubeIcon from "../../_icon/cubeIcon";
 import Monitor from "../../_icon/monitor";
-export default function Eddm() {
+function Eddm() {
   const WORK_LIST = [
     "대우조선 선박 건조에 필요한 설계 작업에 활용되는 API 루트 비교",
     "대우조선 엔지니어링에 등록된 모든 API 이력 추적 및 상태 관리",
@@ -66,3 +67,5 @@ export default function Eddm() {
     </div>
   );
 }
+
+export default memo(Eddm);

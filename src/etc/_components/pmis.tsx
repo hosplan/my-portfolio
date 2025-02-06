@@ -1,3 +1,4 @@
+import { memo } from "react";
 import BasicInfo from "../../_components/basicInfo";
 import Effect from "../../_components/effect";
 import SubTitle from "../../_components/subTitle";
@@ -5,7 +6,7 @@ import Title from "../../_components/title";
 import WorkList from "../../_components/workList";
 import CubeIcon from "../../_icon/cubeIcon";
 
-export default function Pmis() {
+function Pmis() {
   const WORK_LIST = [
     "선박제조, 출하 파트 개발(선박 관리)",
     "선박 설계에 필요한 Spec 형상 관리 개발(선박설계)",
@@ -21,7 +22,15 @@ export default function Pmis() {
   const BASIC_INFO = {
     duringDate: "2021-01 ~ 2022-02",
     submit: "프로젝트 통합 정보 관리",
-    useTech: ["C#, MSSQL, JavaScript"],
+    useTech: [
+      "C#",
+      "MS SQL SERVER",
+      "JavaScript",
+      "CSS3",
+      "HTML5",
+      ".Net",
+      "BootStrap",
+    ],
   };
   return (
     <div className="z-50 flex-1 h-screen p-20 flex flex-col items-start border rounded-xl transition-all">
@@ -52,3 +61,5 @@ export default function Pmis() {
     </div>
   );
 }
+
+export default memo(Pmis);

@@ -5,23 +5,23 @@ import SubTitle from "../../_components/subTitle";
 import Title from "../../_components/title";
 import WorkList from "../../_components/workList";
 import CubeIcon from "../../_icon/cubeIcon";
-function Clovine() {
+import dayjs from "dayjs";
+function KeyboardHint() {
   const WORK_LIST = [
-    "Clovine SAAS 서비스 운영중 발생하는 핵심 개발이슈/오류 트러블 슈팅 및 개선",
-    "개발 확장성을 고려한 모듈화 작업 진행",
-    "신규 제품 기능 개선 및 개발에 필요한 선행 신 기술 연구",
-    "선행 신기술 개발 적용/활용할 수 있는 기타 프로젝트 참여",
+    "SaaS 서비스 운영을 위한 인프라 구축(AWS, Docker 활용)",
+    "FrontEnd(NextJS), BackEnd(ExpressJS) 개발",
+    "가격대비 성능과 디자인이 뛰어난 키보드 탐색",
+    "메타태그, 구글,네이버 서치 작업 -> 구글 검색창에 키보드 힌트 검색",
   ];
 
   const EFFECT_LIST = [
-    "라이브 서비스 안정화",
-    "백엔드에서 비동기 문제로 발생하는 간헐적 버그 제거",
-    "전반적인 성능 향샹 및 사용자 친화적 UI를 위한 개선",
+    "기계식 키보드를 잘 모르는 사용자에게 부담없는 설문을 통해 적절한 키보드 추천",
   ];
 
   const BASIC_INFO = {
-    duringDate: "2022-03 ~ 2023-10",
-    submit: "프로젝트 통합 관리 SAAS 서비스",
+    duringDate: `2025-01-31 ~ ${dayjs().format("YYYY-MM-DD")}(진행중)`,
+    submit:
+      "키보드를 구매하고자 하는 사용자에게 5가지 설문을 통해 키보드 추천 서비스",
     useTech: [
       "ExpressJS",
       "MongoDB",
@@ -31,17 +31,15 @@ function Clovine() {
       "AWS",
       "NginX",
     ],
+    url: "https://keyboardHint.com",
   };
 
   return (
     <div className="z-50 flex-1 p-20 flex flex-col items-start border rounded-xl transition-all h-screen">
-      <Title title={"클로바인"} />
-      <SubTitle
-        subTitle={
-          "프로젝트를 한눈에 보며 혁신적으로 관리하여 프로젝트 성공을 위한 서비스"
-        }
-      />
+      <Title title={"KeyboardHint"} />
+      <SubTitle subTitle={"내가 원하는 키보드 쉽게 찾기"} />
       <BasicInfo basicInfo={BASIC_INFO} />
+
       <div className="flex flex-col overflow-y-auto w-full mt-10">
         <WorkList workList={WORK_LIST} percent={60} />
         <Effect title={"서비스 개선 효과"} effectList={EFFECT_LIST} />
@@ -55,7 +53,23 @@ function Clovine() {
             <div className="m-auto">
               <img
                 src={
-                  "https://hosplan.github.io/my-portfolio/img/contructor/clovine.jpg"
+                  "https://hosplan.github.io/my-portfolio/img/keyboardhint/banner.jpg"
+                }
+                width={"auto"}
+              />
+            </div>
+            <div className="m-auto">
+              <img
+                src={
+                  "https://hosplan.github.io/my-portfolio/img/keyboardhint/question.jpg"
+                }
+                width={"auto"}
+              />
+            </div>
+            <div className="m-auto">
+              <img
+                src={
+                  "https://hosplan.github.io/my-portfolio/img/keyboardhint/answer.jpg"
                 }
                 width={"auto"}
               />
@@ -67,4 +81,4 @@ function Clovine() {
   );
 }
 
-export default memo(Clovine);
+export default memo(KeyboardHint);

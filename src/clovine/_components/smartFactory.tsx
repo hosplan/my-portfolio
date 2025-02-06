@@ -1,3 +1,4 @@
+import { memo } from "react";
 import BasicInfo from "../../_components/basicInfo";
 import Effect from "../../_components/effect";
 import SubTitle from "../../_components/subTitle";
@@ -5,7 +6,7 @@ import Title from "../../_components/title";
 import WorkList from "../../_components/workList";
 import CubeIcon from "../../_icon/cubeIcon";
 import Monitor from "../../_icon/monitor";
-export default function SmartFactory() {
+function SmartFactory() {
   const WORK_LIST = [
     "프로젝트 PM",
     "샌드위치 판넬 제조 시 발생되는 불량 품목 실시간 감지(스마트 카메라 자체개발) 개발",
@@ -24,7 +25,15 @@ export default function SmartFactory() {
   const BASIC_INFO = {
     duringDate: "2022-03 ~ 2023-03",
     submit: "MES/스마트 팩토리 개발",
-    useTech: ["React", "ExpressJS", "Python", "MongoDB"],
+    useTech: [
+      "React",
+      "ExpressJS",
+      "Python",
+      "MongoDB",
+      "JavaScript",
+      "CSS3",
+      "HTML5",
+    ],
   };
 
   return (
@@ -91,3 +100,4 @@ export default function SmartFactory() {
     </div>
   );
 }
+export default memo(SmartFactory);

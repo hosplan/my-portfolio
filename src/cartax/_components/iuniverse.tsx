@@ -7,16 +7,15 @@ import CubeIcon from "../../_icon/cubeIcon";
 import Monitor from "../../_icon/monitor";
 export default function Iuniverse() {
   const WORK_LIST = [
-    "개발인원 3명, 디자이너 1명으로 구성",
+    "개발인원 2명, 디자이너 1명으로 구성",
     "프로젝트 PM",
     "기획, 설계, 개발, 배포 그리고 운영까지 총괄",
   ];
 
   const EFFECT_LIST = [
-    "AWS, Docker를 활용한 운영 및 배포",
-    "BackEnd와 FrontEnd 분리 개발, 운영",
-    "AWS SES를 활용한 이메일 인증",
-    "JWT를 활용한 보안인증",
+    "보드 개념을 투입하여 카테고리 역할을 수행 카테고리별 업무 분류가 가능",
+    "각 태스크별 작성할 수 있는 입력폼 제공 및 상태값 제공으로 업무의 진행도 파악 가능",
+    "태스크별 공유가 가능하여 공유받은 인원과 협력기능 제공",
   ];
 
   const BASIC_INFO = {
@@ -24,10 +23,14 @@ export default function Iuniverse() {
     submit: "최신 기술을 활용한 사이드 프로젝트",
     useTech: [
       "NextJS",
-      "Java(SpringBoot)",
+      "Java",
+      "SpringBoot",
       "PostgreSql",
       "TypeScript",
       "Docker",
+      "AWS",
+      "NginX",
+      "RestAPI",
     ],
   };
 
@@ -38,7 +41,7 @@ export default function Iuniverse() {
       <BasicInfo basicInfo={BASIC_INFO} />
       <div className="flex flex-col overflow-y-auto w-full mt-10">
         <WorkList workList={WORK_LIST} percent={60} />
-        <Effect title={"그 외 사용"} effectList={EFFECT_LIST} />
+        <Effect title={"기대 효과"} effectList={EFFECT_LIST} />
         <div className="flex flex-col w-full mt-5 border rounded-xl hover:shadow-md transition-shadow">
           <div className="flex items-center gap-2 text-left text-lg font-semibold border-b py-3 px-6">
             <CubeIcon />

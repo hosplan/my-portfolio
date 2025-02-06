@@ -1,10 +1,11 @@
+import { memo } from "react";
 import BasicInfo from "../../_components/basicInfo";
 import Effect from "../../_components/effect";
 import SubTitle from "../../_components/subTitle";
 import Title from "../../_components/title";
 import WorkList from "../../_components/workList";
 import CubeIcon from "../../_icon/cubeIcon";
-export default function HmdCoWork() {
+function HmdCoWork() {
   const WORK_LIST = [
     "현대중공업 프로젝트에서 개발한 선박관리, 선박설계, 통합관리를 기반으로 하여 현대미포조선 맞춤형 개발",
     "현대미포조선의 요구사항에 따른 Spec관리 자체 개발",
@@ -20,7 +21,7 @@ export default function HmdCoWork() {
   const BASIC_INFO = {
     duringDate: "2020-02 ~ 2021-03",
     submit: "현대미포조선 차세대 중/소형 선박건조 시스템",
-    useTech: ["C#", "Oracle", "Java", "JavaScript"],
+    useTech: ["C#", "Oracle", "JavaScript", ".Net", "CSS3", "BootStrap"],
   };
 
   return (
@@ -54,3 +55,5 @@ export default function HmdCoWork() {
     </div>
   );
 }
+
+export default memo(HmdCoWork);

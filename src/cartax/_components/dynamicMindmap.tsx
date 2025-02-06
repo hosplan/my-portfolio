@@ -1,10 +1,11 @@
+import { memo } from "react";
 import BasicInfo from "../../_components/basicInfo";
 import Effect from "../../_components/effect";
 import SubTitle from "../../_components/subTitle";
 import Title from "../../_components/title";
 import WorkList from "../../_components/workList";
 import CubeIcon from "../../_icon/cubeIcon";
-export default function DynamicMindmap() {
+function DynamicMindmap() {
   const WORK_LIST = [
     "업무외 개인 프로토타입 개발(2022-09 ~ 2022-10)",
     "프로토 타입 개발 이후 성능 및 UI 등의 강점으로 인해 정식 프로젝트 승격",
@@ -19,8 +20,8 @@ export default function DynamicMindmap() {
 
   const BASIC_INFO = {
     duringDate: "2022-10 ~ 2023-04",
-    submit: "신기술을 활용한 마인드맵",
-    useTech: ["ExpressJS", "Javscript", "d3"],
+    submit: "D3.js를 활용한 마인드맵",
+    useTech: ["ExpressJS", "Javscript", "d3", "HTML5", "CSS3"],
   };
 
   return (
@@ -60,3 +61,5 @@ export default function DynamicMindmap() {
     </div>
   );
 }
+
+export default memo(DynamicMindmap);

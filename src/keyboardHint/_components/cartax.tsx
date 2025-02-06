@@ -6,8 +6,9 @@ import Title from "../../_components/title";
 import WorkList from "../../_components/workList";
 import CubeIcon from "../../_icon/cubeIcon";
 import Monitor from "../../_icon/monitor";
+import { memo } from "react";
 
-export default function Cartax() {
+function Cartax() {
   const WORK_LIST = [
     "CataxBiz 구버전에서 신버전으로 리뉴얼 작업",
     "차량, 사용자, 운행 파트의 성능 개선을 위한 코드 리펙터링 진행",
@@ -22,9 +23,9 @@ export default function Cartax() {
   ];
 
   const BASIC_INFO = {
-    duringDate: `2024-06 ~ ${dayjs().format("YYYY-MM-DD")}`,
+    duringDate: `2024-06 ~ ${dayjs().format("YYYY-MM-DD")}(진행중)`,
     submit: "법인차량 운행일지 자동 생성 서비스",
-    useTech: ["NextJS", "Mysql", "AWS", "Nginx"],
+    useTech: ["NextJS", "Mysql", "AWS", "Nginx", "HTML5", "TailWind", "CSS3"],
   };
 
   return (
@@ -112,3 +113,4 @@ export default function Cartax() {
     </div>
   );
 }
+export default memo(Cartax);

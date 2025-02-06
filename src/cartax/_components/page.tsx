@@ -1,4 +1,4 @@
-import Cartax from "./cartax";
+import DynamicMindmap from "./dynamicMindmap";
 import Iuniverse from "./iuniverse";
 
 export default function Page() {
@@ -6,7 +6,7 @@ export default function Page() {
     <div className="">
       <div className="flex w-full h-full flex-col md:flex-row gap-5 p-10 flex-wrap">
         <Iuniverse />
-        <Cartax />
+        <DynamicMindmap />
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ import ClovinePage from "./clovine/_components/page";
 import CarTaxPage from "./cartax/_components/page";
 import EndPage from "./end/_components/page";
 import dev from "./developer.module.scss";
+import KeyboardhintPage from "./keyboardHint/_components/page";
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,7 @@ function App() {
           <EtcPage />
           <ClovinePage />
           <CarTaxPage />
+          <KeyboardhintPage />
           <EndPage />
         </div>
       </div>

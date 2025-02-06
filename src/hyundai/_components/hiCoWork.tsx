@@ -1,10 +1,12 @@
+import { memo } from "react";
 import BasicInfo from "../../_components/basicInfo";
 import Effect from "../../_components/effect";
 import SubTitle from "../../_components/subTitle";
 import Title from "../../_components/title";
 import WorkList from "../../_components/workList";
 import CubeIcon from "../../_icon/cubeIcon";
-export default function HiCoWork() {
+
+function HiCoWork() {
   const WORK_LIST = [
     "선박제조, 출하 파트 개발(선박 관리)",
     "선박 설계에 필요한 Spec 형상 관리 개발(선박설계)",
@@ -21,7 +23,17 @@ export default function HiCoWork() {
   const BASIC_INFO = {
     duringDate: "2019-02 ~ 2020-02",
     submit: "현대중공업 차세대 초/대형 선박건조 시스템",
-    useTech: ["C#", "Oracle", "Mysql", "Java", "JavaScript"],
+    useTech: [
+      "C#",
+      "Oracle",
+      "MS SQL SERVER",
+      "Java",
+      "JavaScript",
+      ".Net",
+      "CSS3",
+      "HTML5",
+      "BootStrap",
+    ],
   };
 
   return (
@@ -55,3 +67,5 @@ export default function HiCoWork() {
     </div>
   );
 }
+
+export default memo(HiCoWork);
