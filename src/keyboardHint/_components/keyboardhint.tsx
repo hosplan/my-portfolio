@@ -23,10 +23,10 @@ function KeyboardHint() {
     submit:
       "키보드를 구매하고자 하는 사용자에게 5가지 설문을 통해 키보드 추천 서비스",
     useTech: [
-      "ExpressJS",
-      "MongoDB",
-      "JavaScript",
-      "HTML5",
+      "NextJS",
+      "MySQL",
+      "Tailwind",
+      "Typescript",
       "CSS3",
       "AWS",
       "NginX",
@@ -47,7 +47,7 @@ function KeyboardHint() {
         <div className="flex flex-col w-full mt-5 border rounded-xl hover:shadow-md transition-shadow">
           <div className="flex items-center gap-2 text-left text-lg font-semibold border-b py-3 px-6">
             <CubeIcon />
-            구조
+            실제 화면
           </div>
           <div className="flex gap-3 px-10 py-5 items-center hover:shadow-md transition-shadow">
             <div className="m-auto">
