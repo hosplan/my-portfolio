@@ -25,7 +25,7 @@ function DynamicMindmap() {
   };
 
   return (
-    <div className="z-50 flex-1 p-20 flex flex-col items-start border rounded-xl transition-all h-screen">
+    <div className="z-50 flex-1 w-full p-5 md:p-20 flex flex-col items-start border rounded-xl transition-all md:h-screen">
       <Title title={"Dynamic MindMap"} />
       <SubTitle subTitle={"기존 마인드맵을 대체하는 차세대 마인드맵"} />
       <BasicInfo basicInfo={BASIC_INFO} />

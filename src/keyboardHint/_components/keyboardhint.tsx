@@ -1,11 +1,11 @@
+import dayjs from "dayjs";
 import { memo } from "react";
 import BasicInfo from "../../_components/basicInfo";
 import Effect from "../../_components/effect";
 import SubTitle from "../../_components/subTitle";
 import Title from "../../_components/title";
 import WorkList from "../../_components/workList";
-import CubeIcon from "../../_icon/cubeIcon";
-import dayjs from "dayjs";
+import Monitor from "../../_icon/monitor";
 function KeyboardHint() {
   const WORK_LIST = [
     "SaaS 서비스 운영을 위한 인프라 구축(AWS, Docker 활용)",
@@ -19,9 +19,8 @@ function KeyboardHint() {
   ];
 
   const BASIC_INFO = {
-    duringDate: `2025-01-31 ~ ${dayjs().format("YYYY-MM-DD")}(진행중)`,
-    submit:
-      "키보드를 구매하고자 하는 사용자에게 5가지 설문을 통해 키보드 추천 서비스",
+    duringDate: `2025-01 ~ ${dayjs().format("YYYY-MM")}(진행중)`,
+    submit: "사용자에게 5가지 설문을 통해 원하는 키보드 추천",
     useTech: [
       "NextJS",
       "MySQL",
@@ -31,11 +30,10 @@ function KeyboardHint() {
       "AWS",
       "NginX",
     ],
-    url: "https://keyboardHint.com",
   };
 
   return (
-    <div className="z-50 flex-1 p-20 flex flex-col items-start border rounded-xl transition-all h-screen">
+    <div className="z-50 flex-1 w-full p-5 md:p-20 flex flex-col items-start border rounded-xl transition-all md:h-screen">
       <Title title={"KeyboardHint"} />
       <SubTitle subTitle={"내가 원하는 키보드 쉽게 찾기"} />
       <BasicInfo basicInfo={BASIC_INFO} />
@@ -46,14 +44,21 @@ function KeyboardHint() {
 
         <div className="flex flex-col w-full mt-5 border rounded-xl hover:shadow-md transition-shadow">
           <div className="flex items-center gap-2 text-left text-lg font-semibold border-b py-3 px-6">
-            <CubeIcon />
+            <Monitor />
             실제 화면
+            <a
+              href="https://keyboardhint.com"
+              target="_blank"
+              className="text-blue-600 ml-auto"
+            >
+              홈페이지 가기
+            </a>
           </div>
           <div className="flex gap-3 px-10 py-5 items-center hover:shadow-md transition-shadow">
             <div className="m-auto">
               <img
                 src={
-                  "https://hosplan.github.io/my-portfolio/img/keyboardhint/banner.jpg"
+                  "https://hosplan.github.io/my-portfolio/img/keyboardhint/banner.png"
                 }
                 width={"auto"}
               />
@@ -61,7 +66,7 @@ function KeyboardHint() {
             <div className="m-auto">
               <img
                 src={
-                  "https://hosplan.github.io/my-portfolio/img/keyboardhint/question.jpg"
+                  "https://hosplan.github.io/my-portfolio/img/keyboardhint/question.png"
                 }
                 width={"auto"}
               />
@@ -69,7 +74,7 @@ function KeyboardHint() {
             <div className="m-auto">
               <img
                 src={
-                  "https://hosplan.github.io/my-portfolio/img/keyboardhint/answer.jpg"
+                  "https://hosplan.github.io/my-portfolio/img/keyboardhint/answer.png"
                 }
                 width={"auto"}
               />

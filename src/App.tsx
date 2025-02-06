@@ -13,17 +13,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header"></header>
-      <div className="overflow-x-hidden w-full p-10">
+      <div className="overflow-x-hidden w-full p-2 md:p-10">
         <div id={dev.smallStars}></div>
         <div id={dev.middleStars}></div>
         <div id={dev.bigStars}></div>
         <Page />
         <div className="flex flex-col wrap">
-          <HyundaiPage />
-          <EtcPage />
-          <ClovinePage />
-          <CarTaxPage />
           <KeyboardhintPage />
+          <CarTaxPage />
+          <ClovinePage />
+          <EtcPage />
+          <HyundaiPage />
           <EndPage />
         </div>
       </div>

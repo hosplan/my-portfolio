@@ -34,7 +34,7 @@ function Clovine() {
   };
 
   return (
-    <div className="z-50 flex-1 p-20 flex flex-col items-start border rounded-xl transition-all h-screen">
+    <div className="z-50 flex-1 w-full p-5 md:p-20 flex flex-col items-start border rounded-xl transition-all md:h-screen">
       <Title title={"클로바인"} />
       <SubTitle
         subTitle={

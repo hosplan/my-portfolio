@@ -37,7 +37,7 @@ function HiCoWork() {
   };
 
   return (
-    <div className="z-50 flex-1 h-screen p-20 flex flex-col items-start border rounded-xl transition-all">
+    <div className="z-50 flex-1 w-full p-5 md:p-20 flex flex-col items-start border rounded-xl transition-all md:h-screen">
       <Title title={"현대중공업 Hi-CoWork"} />
       <SubTitle
         subTitle={

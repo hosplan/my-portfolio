@@ -33,7 +33,7 @@ function Pmis() {
     ],
   };
   return (
-    <div className="z-50 flex-1 h-screen p-20 flex flex-col items-start border rounded-xl transition-all">
+    <div className="z-50 flex-1 w-full p-5 md:p-20 flex flex-col items-start border rounded-xl transition-all md:h-screen">
       <Title title={"PMIS"} />
       <SubTitle
         subTitle={"상기 프로젝트의 노하우로 만든 범용 프로젝트 형상관리 시스템"}

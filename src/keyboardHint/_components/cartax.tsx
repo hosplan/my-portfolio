@@ -23,13 +23,13 @@ function Cartax() {
   ];
 
   const BASIC_INFO = {
-    duringDate: `2024-06 ~ ${dayjs().format("YYYY-MM-DD")}(진행중)`,
+    duringDate: `2024-06 ~ ${dayjs().format("YYYY-MM")}(진행중)`,
     submit: "법인차량 운행일지 자동 생성 서비스",
     useTech: ["NextJS", "Mysql", "AWS", "Nginx", "HTML5", "TailWind", "CSS3"],
   };
 
   return (
-    <div className="z-50 flex-1 p-20 flex flex-col items-start border rounded-xl transition-all h-screen">
+    <div className="z-50 flex-1 w-full p-5 md:p-20 flex flex-col items-start border rounded-xl transition-all md:h-screen">
       <Title title={"CarTax Biz"} />
       <SubTitle
         subTitle={
@@ -62,7 +62,7 @@ function Cartax() {
               target="_blank"
               className="text-blue-600 ml-auto"
             >
-              카택스 홈페이지 가기
+              홈페이지 가기
             </a>
           </div>
           <div className="flex gap-10 px-10 py-5 h-full flex-col items-center hover:shadow-md transition-shadow">

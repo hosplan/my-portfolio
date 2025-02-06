@@ -6,7 +6,7 @@ export default function ProjectIcon() {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="size-12"
+      className="auto"
     >
       <path
         strokeLinecap="round"
